@@ -12,15 +12,15 @@ BB_SPAWN_ZOMBIE (POINT ENTITY)
   SMG carrying grunt or monster_hgrunt_shotgun for a shotgun carrying grunt. 
 
 It is usually best to only place a few marines at key points otherwise they will just
-over run the zombies which isnt really how the mod should play i dont think :S 
+overrun the zombies which isn't really how the mod should play I don't think :S 
 
 
 BB_OBJECTIVES (POINT ENTITY)
 
-* Mission Objectives (bb_objectives): Place this entity anywhere were you want to spawn
+* Mission Objectives (bb_objectives): Place this entity anywhere where you want to spawn
   a fred or a case (you can select in the case if either only the case or fred (or both)
   should spawn at this place, the best idea is to place lots of these around the maps key
-  areas to vary the gameplay from round to round. Another entities which is linked to this
+  areas to vary the gameplay from round to round. Another entity which is linked to this
   one is the...
 
 
@@ -28,9 +28,9 @@ BB_MISSION_ZONE (FUNC_BRUSH ENTITY)
 
 * ...BB_MISSION_ZONE one. This is needed as a place to take the case to once the player
   has picked it up. To create one of these, create a large brush where people will run
-  into with it. The best place for this is back at the main base of somewhere like that.
-  Once its created, tie it to the entity bb_mission_zone. This brush will then be invisible
-  in game and is the return place for the case. Its also a good idea to place a...
+  into with it. The best place for this is back at the main base or somewhere like that.
+Once it's created, tie it to the entity bb_mission_zone. This brush will then be invisible
+in game and is the return place for the case. It's also a good idea to place a...
 
 
 PE_RADAR_MARK (POINT ENTITY)
@@ -49,17 +49,17 @@ MAP ENDINGS
   wp2 etc. until you get to your last wp and set that to wp1 again so it will loop. This
   will make the blackhawk fly to these waypoints during the game when it is idle.
   Now create a LARGE brush, and tie it to the entity bb_escape_final. This will also be
-  invisible once in game, but make sure that in anytime during the game, the blackhawk
-  will not come into contact with this brush. Now place a waypoint above this location,
+  invisible once in game, but make sure that at no time during the game, the blackhawk
+  will come into contact with this brush. Now place a waypoint above this location,
   one where you want the blackhawk to fly to once it has been called. You can set up a
   chain of waypoints such as before or just a single one. Label the first waypoint of the
   chain fin, or the waypoint you want it to fly to once the blackhawk has been called fin.
   Now on the bb_escapeair entity, under rescue route start, set the target to fin or
-  whatever you called the rescue waypoint. Now your backhawk is setup, you have to set up
-  the means of calling it. Create a fake radio out of brushs, make sure u have a small bit
+  whatever you called the rescue waypoint. Now your Blackhawk is set up, you have to set up
+  the means of calling it. Create a fake radio out of brushes, make sure you have a small bit
   of it which you can tie to a func_button entity. Tie this button part to a func_button,
   and set it up like you normally would a button but set its target to bh1 or whatever you
-  called your blackhawk. Now ingame on the last mission, after you push the button the
+  called your blackhawk. Now in-game on the last mission, after you push the button the
   blackhawk should now come to the last waypoint. But you still have to add markers so the
   player knows where to go.
 
@@ -71,9 +71,9 @@ MAPENDING (SIMPLE)
 If you active the "always active" flag in the bb_escape_final ent you'll always escape if
 you reach this zone. You can combine those things with your own mission. Seal the escape
 zone until the last mission has been completed (for example a door etc). After the door
-has been opened you are abel to escape.
+has been opened you are able to escape.
 
-If you don't put in an Escapezone the round will be completed after the last mission.
+If you don't put in an escape zone the round will be completed after the last mission.
 
 
 .TSK Missionfile
@@ -84,7 +84,7 @@ This is telling the map what type of missions.
 
 random ---> Either fetch the case, kill fred or kill a special amount of zombies; the last
 	    random mission always activates the escape mission, so you should always put
-	    random at the end of your tsk.file if you want ppl to escape!
+	    random at the end of your tsk.file if you want people to escape!
 
 fred   ---> This triggers the fred mission
 
@@ -105,7 +105,7 @@ random - -
 The first "random" triggers a random mission (fred, case or carnage).
 The fred triggers the "kill fred" mission AFTER the first mission has been completed!
 The case triggers the "fetch the case" mission AFTER you killed fred.
-The carnage triggers the "kill amount of zombies" mission AFTER you completed the casemission!
+The carnage triggers the "kill amount of zombies" mission AFTER you completed the case mission!
 The last "random" triggers the "search the radio and order the helicopter" mission!
 
 
@@ -115,12 +115,12 @@ fred door1 door2
 means, that with the beginning of the fred mission "door1" will be triggered and as soon as
 the fred mission is completed the entity "door2" will be triggered.
 
-You are also able to create your own mapmissions (take a look at the end of this document)!
+You are also able to create your own map missions (take a look at the end of this document)!
 
 
 Misc.
 =====
-Zombies are VERY restricted in BB, so i reccomend leaving escape routes from WHEREVER you
+Zombies are VERY restricted in BB, so I recommend leaving escape routes from WHEREVER you
 have placed zombie spawns. Zombies CANNOT do the following:
 
 Crouch
@@ -128,7 +128,7 @@ Climb ladders
 
 These are very important factors when creating a map, as if you are having multiple layers,
 you must include ramps to each section, and these have to be full access ramps as the
-zombies cant crouch. This was the worst problem when i was creating my map.
+zombies can't crouch. This was the worst problem when I was creating my map.
 
 ===========================================================================================
 
@@ -136,7 +136,7 @@ Short information of those entities
 ===========================================================================================
 
 bb_spawn_player: Player spawn
-bb_zombie_player: If you create a map with sealed sections you've to avoid, that zombie
+bb_zombie_player: If you create a map with sealed sections you have to avoid that zombie
 		  players spawn in those sections. Set 12 bb_zombie_players to force a
 		  zombified player to spawn there. If there are no bb_zombie_player ents
 		  in the map zombified players will spawn at the normal bb_spawn_zombie
@@ -191,13 +191,13 @@ The missions are defined in:
 "random" means that a random builtin mission is
 used, any other value names the entity which gets
 activated as soon as the previous mission is
-completet. The last mission in the file ends the
+completed. The last mission in the file ends the
 round. If "random" is the last entry it will be the
 rescue mission.
 
 bb_funk: Position of the radio for the last mission
 
-bb_escape_radar: Position of the final ecapezone
+bb_escape_radar: Position of the final escape zone
 
 bb_healthkit: BrainBread healthkit
 

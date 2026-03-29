@@ -16,7 +16,7 @@ font x (bluehighway)   // x = string, name of the font to use sprites/hud/"fontn
 start x (auto)         // x = string, defines from where the box should slide in, valid values:
                           none, left, right, top, bottom, auto(selects between top and bottom)
 
-queue x (false)        // x = boolean, defines wheter to wait for the previous box to disappear
+queue x (false)        // x = boolean, defines whether to wait for the previous box to disappear
 
 xpos x (0)             // x = integer or string, final screen-X position. Valid values:
                           center, left, right, p"percent", "X-value"

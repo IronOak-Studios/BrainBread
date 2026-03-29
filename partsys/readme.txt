@@ -5,7 +5,7 @@ Public-Enemy v1.4 particle system config file documentation
 Default values are in the brackets.
 The faders are located in penemy/pe_faders.cfg
 
-pps x (1)           // x = integer, spray x parts per secont
+pps x (1)           // x = integer, spray x parts per second
 
 num x (0)           // x = integer or "dynamic", spray max x parts, if x == 0 the
                        particle system must be limited by maxlife, if x == dynamic the
@@ -42,7 +42,7 @@ sizefader x (null)  // x = string, name of the fader used to fade the particle s
 mode x (transadd)   // x = string, mode can be normal, detailed, transtex, glow, transalpha,
                        transadd. detailed will use the mask and detail sprite.
                
-falloff x (none)    // x = string, sets the fall of function of the particles, can be none,
+falloff x (none)    // x = string, sets the falloff function of the particles, can be none,
                        gravity, linear.
                
 relative x (not)    // x = string, can be not, ent, att. If x == ent, the particle system
@@ -50,7 +50,7 @@ relative x (not)    // x = string, can be not, ent, att. If x == ent, the partic
                        it will be relative to an attachment specified in the code.
                
 clip x (false)      // x = boolean, if x == true the particles will be clipped against
-                       walls/entitys
+                       walls/entities
                
 frames x (1)        // x = integer, number of frames in the sprite
 

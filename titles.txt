@@ -60,7 +60,7 @@ Radio3
 \t
 \w1. Attention!
 \w2. Ambush!
-\w3. Granade!
+\w3. Grenade!
 \w4. Sniper!
 \w5. Roger that!
 \w6. Negative!

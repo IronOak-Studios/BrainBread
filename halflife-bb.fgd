@@ -359,7 +359,7 @@
 		3: "Large cone"
 		4: "Extra-large cone"
 	]
-	minRange(string) : "Minmum target range" : "0"
+	minRange(string) : "Minimum target range" : "0"
 	maxRange(string) : "Maximum target range" : "0"
 	_minlight(string) : "Minimum light level"
 ]
@@ -497,7 +497,7 @@
 		22: "Random pitch fast"
 		23: "Incremental Spinup"
 		24: "Alien"
-		25: "Bizzare"
+		25: "Bizarre"
 		26: "Planet X"
 		27: "Haunted"
 	]
@@ -1938,7 +1938,7 @@
 [
 	target(string) : "Target On Release" 
 	monstertype(string) : "Monster to spawn" : "monster_zombie"
-	netname(string) : "Childrens' Name"
+	netname(string) : "Children's Name"
 	spawnflags(flags) = 
 	[
 		1 : "Start ON" 	: 0
@@ -1960,12 +1960,12 @@
 ]
 
 @PointClass base(PlayerClass) = pe_radar_mark : "Radarnote for Escapezone" []
-@PointClass base(PlayerClass) size(-10 -10 -10, 10 10 10 )  = pe_light : "Lightsource for Lens Flare Effekt"
+@PointClass base(PlayerClass) size(-10 -10 -10, 10 10 10 )  = pe_light : "Light source for Lens Flare Effect"
 [
 	refpnt(integer) : "Die Nummer des ref. Punkts" : 0
 ]
 
-@PointClass base(PlayerClass) size(-10 -10 -10, 10 10 10 )  = pe_light_ref : "Referenceposition for Lens Flare Effekt"
+@PointClass base(PlayerClass) size(-10 -10 -10, 10 10 10 )  = pe_light_ref : "Reference position for Lens Flare Effect"
 [
 	refnr(integer) : "Ref. Punkt nr" : 0
 ]
@@ -2031,7 +2031,7 @@
 		2: "GlobalRain (size of area doesn't matter)"
 		3: "GlobalSnow (size of area doesn't matter)"
 	]
-	partspread(string) : "The max speed of partcle side movement (relative to the fallspeed)" : "0.00"
+	partspread(string) : "The max speed of particle side movement (relative to the fallspeed)" : "0.00"
 
 ]
 
@@ -2052,7 +2052,7 @@
 
 @PointClass base(Weapon, Targetx) = bb_funk : "Position of the helitrigger" []
 
-@PointClass base(Weapon, Targetx) = bb_escape_radar : "Position of the final ecapezone" []
+@PointClass base(Weapon, Targetx) = bb_escape_radar : "Position of the final escape zone" []
 
 @PointClass base(Weapon, Targetx) = bb_healthkit : "BrainBread Healthkit" []
 
