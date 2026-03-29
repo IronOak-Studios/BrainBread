@@ -1,0 +1,12 @@
+sv_difficulty
+sv_cheats
+sv_damageinfo
+sv_gravity
+sv_restartround
+mp_fraglimit
+mp_friendlyfire
+mp_scorelimit
+mp_timelimit
+speak
+sv_zombie_behavior
+sv_zombie_yawspeed

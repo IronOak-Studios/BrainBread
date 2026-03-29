@@ -1,0 +1,81 @@
+// BrainBread Client Options Layout Script
+//
+// These settings appear in the Multiplayer > Advanced dialog.
+//
+// Format:
+//  "cvar" { "Prompt" { type [ type info ] } { default } }
+//
+//  type =
+//   BOOL   (a yes/no toggle)
+//   STRING
+//   NUMBER
+//   LIST
+//
+// type info:
+// BOOL                 no type info
+// NUMBER       min max range, use -1 -1 for no limits
+// STRING       no type info
+// LIST          delimited list of options value pairs
+
+
+// Cvar	-	Setting
+
+VERSION 1.0
+
+DESCRIPTION INFO_OPTIONS
+{
+	"cl_newfont"
+	{
+		"#BB_Use_New_Font"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_bobtilt"
+	{
+		"#BB_View_Bob_Tilt"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"hud_scale"
+	{
+		"#BB_HUD_Scale"
+		{
+			LIST
+			"#BB_HUD_Scale_Auto" "0"
+			"#BB_HUD_Scale_1x" "1"
+			"#BB_HUD_Scale_2x" "2"
+			"#BB_HUD_Scale_3x" "3"
+			"#BB_HUD_Scale_4x" "4"
+		}
+		{ "0" }
+	}
+
+	"cl_blood"
+	{
+		"#BB_Blood_Level"
+		{
+			LIST
+			"#BB_Blood_None" "0"
+			"#BB_Blood_Low" "1"
+			"#BB_Blood_Medium" "2"
+			"#BB_Blood_High" "3"
+		}
+		{ "3" }
+	}
+
+	"cl_lensflare"
+	{
+		"#BB_Lens_Flare"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"mp_decals"
+	{
+		"#Valve_Multiplayer_Decal_Limit"
+		{ NUMBER 0.000000 4096.000000 }
+		{ "300.000000" }
+	}
+}

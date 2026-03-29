@@ -1,0 +1,52 @@
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+._*
+
+# Editor/IDE files
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.ncb
+
+# CVS leftovers
+.cvsignore
+CVS/
+
+# Build artifacts
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.idb
+*.pch
+Debug/
+Release/
+
+# Map compile artifacts
+*.pts
+*.log
+*.err
+*.p0
+*.p1
+*.p2
+*.p3
+*.lin
+
+# Map source files (don't distribute)
+*.map
+*.rmf
+*.jmf
+*.vmf
+
+# User config (generated at runtime)
+userconfig.cfg
