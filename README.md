@@ -6,7 +6,7 @@ For more information visit the BrainBread website: https://ironoak.ch/BB/
 
 ## About This Repository
 
-This repository contains the game assets, configuration files, and compiled binaries for BrainBread v1.3.37. For the source code, see [BrainBread](https://github.com/IronOak-Studios/BrainBread).
+This repository contains the game assets, configuration files, and compiled binaries for BrainBread. For the source code, see [BrainBread](https://github.com/IronOak-Studios/BrainBread).
 
 ## Repository Structure
 

@@ -63,45 +63,52 @@ DESCRIPTION SERVER_OPTIONS
 		{ "0" }
 	}
 
-	"mp_fraglimit"
-	{
-		"#Valve_Frag_Limit"
-		{ NUMBER 0.000000 -1.000000 }
-		{ "0.000000" }
-	}
-
-	"mp_teamscorelimit"
-	{
-		"#BB_Team_Score_Limit"
-		{ NUMBER 0.000000 -1.000000 }
-		{ "0.000000" }
-	}
-
 	"sv_difficulty"
 	{
 		"#BB_Difficulty"
 		{
 			LIST
 			"#BB_Difficulty_Easy" "0.5"
-			"#BB_Difficulty_Normal" "1.1"
-			"#BB_Difficulty_Hard" "2.2"
+			"#BB_Difficulty_Normal" "1.0"
+			"#BB_Difficulty_Hard" "2.0"
 			"#BB_Difficulty_Extreme" "3.0"
 		}
 		{ "1" }
 	}
 
+	"sv_savexp"
+	{
+		"#BB_Save_Exp"
+		{
+			LIST
+			"#BB_Save_Exp_Off" "0"
+			"#BB_Save_Exp_24h" "24"
+			"#BB_Save_Exp_1Week" "168"
+			"#BB_Save_Exp_1Month" "720"
+			"#BB_Save_Exp_Forever" "-1"
+		}
+		{ "1" }
+	}
+
+	"sv_maxlevel"
+	{
+		"#BB_Max_Level"
+		{ NUMBER -1.000000 -1.000000 }
+		{ "-1.000000" }
+	}
+
 	"sv_zombiecount"
 	{
 		"#BB_Max_Zombies"
-		{ NUMBER 10.000000 100.000000 }
-		{ "65.000000" }
+		{ NUMBER 10.000000 1000.000000 }
+		{ "120.000000" }
 	}
 
 	"sv_gibcount"
 	{
 		"#BB_Max_Gibs"
-		{ NUMBER 0.000000 50.000000 }
-		{ "10.000000" }
+		{ NUMBER 0.000000 100.000000 }
+		{ "20.000000" }
 	}
 
 	"sv_roundtimelimit"
@@ -143,7 +150,14 @@ DESCRIPTION SERVER_OPTIONS
 	{
 		"#BB_Zombie_Yawspeed"
 		{ NUMBER 1.000000 100.000000 }
-		{ "10.000000" }
+		{ "20.000000" }
+	}
+
+	"sv_zombie_lifetime"
+	{
+		"#BB_Zombie_Lifetime"
+		{ NUMBER 0.000000 600.000000 }
+		{ "60.000000" }
 	}
 
 }
