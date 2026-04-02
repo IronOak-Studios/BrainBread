@@ -79,15 +79,8 @@ DESCRIPTION SERVER_OPTIONS
 	"sv_savexp"
 	{
 		"#BB_Save_Exp"
-		{
-			LIST
-			"#BB_Save_Exp_Off" "0"
-			"#BB_Save_Exp_24h" "24"
-			"#BB_Save_Exp_1Week" "168"
-			"#BB_Save_Exp_1Month" "720"
-			"#BB_Save_Exp_Forever" "-1"
-		}
-		{ "1" }
+		{ NUMBER -1.000000 -1.000000 }
+		{ "24.000000" }
 	}
 
 	"sv_maxlevel"
