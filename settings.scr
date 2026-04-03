@@ -63,6 +63,13 @@ DESCRIPTION SERVER_OPTIONS
 		{ "0" }
 	}
 
+	"mp_flashlight"
+	{
+		"#BB_Flashlight"
+		{ BOOL }
+		{ "1" }
+	}
+
 	"sv_difficulty"
 	{
 		"#BB_Difficulty"
