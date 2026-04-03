@@ -31,6 +31,13 @@ DESCRIPTION INFO_OPTIONS
 		{ "1" }
 	}
 
+	"cl_fontscale"
+	{
+		"#BB_Font_Scale"
+		{ NUMBER 0.500000 4.000000 }
+		{ "1.200000" }
+	}
+
 	"cl_bobtilt"
 	{
 		"#BB_View_Bob_Tilt"
