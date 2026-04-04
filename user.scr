@@ -59,6 +59,13 @@ DESCRIPTION INFO_OPTIONS
 		{ "0" }
 	}
 
+	"cl_gore"
+	{
+		"#BB_Gore_Effects"
+		{ BOOL }
+		{ "1" }
+	}
+
 	"cl_blood"
 	{
 		"#BB_Blood_Level"
