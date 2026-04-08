@@ -73,8 +73,7 @@ clientdata_t none
 
 entity_state_t gamedll Entity_Encode
 {
-	// DEFINE_DELTA( animtime, DT_TIMEWINDOW_8, 8, 1.0 ),
-	DEFINE_DELTA( animtime, DT_TIMEWINDOW_BIG, 8, 100.0 ),
+	DEFINE_DELTA( animtime, DT_TIMEWINDOW_8, 8, 1.0 ),
 	DEFINE_DELTA( frame, DT_FLOAT, 10, 4.0 ),
 	DEFINE_DELTA( origin[0], DT_SIGNED | DT_FLOAT, 16, 8.0 ),
 	DEFINE_DELTA( angles[0], DT_ANGLE, 16, 1.0 ),
@@ -135,8 +134,7 @@ entity_state_t gamedll Entity_Encode
 
 entity_state_player_t gamedll Player_Encode
 {
-	// DEFINE_DELTA( animtime, DT_TIMEWINDOW_8, 8, 1.0 ),
-	DEFINE_DELTA( animtime, DT_TIMEWINDOW_BIG, 8, 100.0 ),
+	DEFINE_DELTA( animtime, DT_TIMEWINDOW_8, 8, 1.0 ),
 	DEFINE_DELTA( frame, DT_FLOAT, 8, 1.0 ),
 	DEFINE_DELTA( origin[0], DT_SIGNED | DT_FLOAT, 18, 32.0 ),
 	DEFINE_DELTA( angles[0], DT_ANGLE, 16, 1.0 ),
