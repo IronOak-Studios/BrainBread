@@ -23,7 +23,6 @@ CVS/
 
 # Build artifacts
 *.obj
-*.pdb
 *.ilk
 *.exp
 *.lib
@@ -47,6 +46,9 @@ Release/
 *.rmf
 *.jmf
 *.vmf
+
+# Packaging output
+dist/
 
 # User config (generated at runtime)
 userconfig.cfg
