@@ -1,6 +1,7 @@
 game "BrainBread"
 url_info "https://www.ironoak.ch/BB"
 url_dl ""
+icon "BrainBread"
 version "1.3.37"
 size "Medium"
 svonly "0"
